@@ -68,7 +68,7 @@ En base a mi experiencia programandolo es importante tener en cuenta los siguien
   
   - Originalmente este codigo estaba pensado para ESP32, y si cambian las dependencias a las necesarias para esta, en teoria deberia funcionar, sin embargo en la práctica nunca me funcionó, tal vez a ustedes si prueban les salga
 
-## 🤝 Contribuciones
+### 🤝 Contribuciones
 
 ¡PRs y sugerencias son bienvenidas!  
 
