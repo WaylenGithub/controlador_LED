@@ -1,0 +1,86 @@
+<!-- PRUEBA CON UN SOLO LED -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de LED</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            width: 150px;
+            height: 50px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            color: white;
+            background-color: red; /* Estado inicial */
+        }
+    </style>
+</head>
+<body>
+    <button id="led-btn">LED OFF</button>
+
+    <script>
+        const socket = new WebSocket("ws://esp8266.local:81");
+        const button = document.getElementById("led-btn");
+        let ledState = "rojo";
+        let isConnected = false; // Variable para rastrear el estado de la conexión
+
+        // Manejar la apertura de la conexión WebSocket
+        socket.onopen = () => {
+            console.log("Conectado a ESP8266");
+            isConnected = true; // Marcar la conexión como establecida
+            // Solicitar el estado inicial del LED
+            socket.send(JSON.stringify({ action: "getState" }));
+        };
+
+        // Manejar mensajes recibidos del WebSocket
+        socket.onmessage = event => {
+            let data = JSON.parse(event.data);
+            if (data.color) {
+                ledState = data.color;
+                actualizarBoton();
+            }
+        };
+
+        // Manejar errores de conexión
+        socket.onerror = error => {
+            console.error("Error en WebSocket:", error);
+            isConnected = false; // Marcar la conexión como no establecida
+        };
+
+        // Manejar el cierre de la conexión
+        socket.onclose = () => {
+            console.log("Conexión WebSocket cerrada");
+            isConnected = false; // Marcar la conexión como no establecida
+        };
+
+        // Manejar clic en el botón
+        button.addEventListener("click", () => {
+            if (!isConnected) {
+                console.error("WebSocket no está conectado.");
+                return;
+            }
+            ledState = (ledState === "rojo") ? "verde" : "rojo";
+            socket.send(JSON.stringify({ led: 5, color: ledState }));
+            actualizarBoton();
+        });
+
+        // Actualizar el estado del botón
+        function actualizarBoton() {
+            button.style.backgroundColor = (ledState === "verde") ? "green" : "red";
+            button.textContent = (ledState === "verde") ? "LED ON" : "LED OFF";
+        }
+    </script>
+</body>
+</html>

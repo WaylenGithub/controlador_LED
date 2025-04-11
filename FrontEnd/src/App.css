@@ -1,0 +1,173 @@
+.container {
+  background: linear-gradient(135deg, #232224, #07080a);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  min-height: 100vh;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* En tu archivo App.css */
+.control-buttons button {
+  margin-right: 10px; /* Añade un margen de 10px entre los botones */
+  margin-bottom: 30px;
+  padding: 10px 20px; /* Añade un poco de padding para que los botones sean más grandes */
+  font-size: 16px; /* Aumenta el tamaño de la fuente */
+  cursor: pointer; /* Cambia el cursor al pasar sobre los botones */
+  border: none; /* Elimina el borde por defecto */
+  border-radius: 5px; /* Añade bordes redondeados */
+  background-color: #007bff; /* Color de fondo azul */
+  color: white; /* Texto en blanco */
+  transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+.control-buttons button:hover {
+  background-color: #0056b3; /* Cambia el color al pasar el mouse */
+}
+
+.control-buttons button:last-child {
+  margin-right: 0; /* Elimina el margen del último botón */
+}
+
+.section-title {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0px;
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto para mejor legibilidad */
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los botones bajen de línea */
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  max-width: 1000px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.frente-container {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.loader-container, .error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.loader {
+  border: 8px solid #f3f3f3; /* Color del borde */
+  border-top: 8px solid #3498db; /* Color del spinner */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite; /* Animación */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+p {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+.error-icon {
+  font-size: 60px;
+  color: #ff4d4d;
+  margin-bottom: 20px;
+}
+
+.error-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.error-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.error-container li {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .row {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .control-buttons button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .row {
+    padding: 5px;
+    gap: 6px;
+  }
+
+  .control-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .control-buttons button {
+    width: 90%;
+    font-size: 14px;
+  }
+}
