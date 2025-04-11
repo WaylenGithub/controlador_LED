@@ -29,7 +29,7 @@ Un sistema de control remoto para tiras de LEDs NeoPixel (WS2812B) mediante una 
 
 ### ⚙️ Pasos de instalación
 1. Clonar este repositorio
-2. Abrir `ESP8266_LED_Controller/esp8266_code/led_controller.ino` en Arduino IDE
+2. Abrir `ESP8266_LED_Controller/Microcontrolador/ESP8266.ino` en Arduino IDE
 3. Modificar las variables en base a lo que uses en el código ESP8266.ino:
    ```cpp
    const char* ssid = "TU_SSID";
