@@ -56,7 +56,7 @@ Un sistema de control remoto para tiras de LEDs NeoPixel (WS2812B) mediante una 
 ### 📋 Requisitos
 - Editor de Código de preferencia
 - Node.js
-- Navegador web
+- Navegador web (internet explorer no)
 - Un padre nuestro (opcional)
 
 ### ⚙️ Pasos de instalación
