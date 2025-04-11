@@ -50,16 +50,19 @@ Un sistema de control remoto para tiras de LEDs NeoPixel (WS2812B) mediante una 
     "Asegúrese de que el microcontrolador esté encendido.",
     "Recargue la página para volver a intentar la conexión."
     ]
-6. Descarga Node.js si no lo tenés
-7. Descargar todas las dependencias necesarias:
+
+## 🛠️ Configuración del archivo del FrontEnd
+1. Descarga Node.js si no lo tenés
+2. Descargar todas las dependencias necesarias:
    Desde FrontEnd
    - react-scripts
    - react-dom
    - express
-8. conecta tu pc al mismo internet que el microcontrolador
-9. opcional: usa el inicio.bat como acceso directo para ejecutar el programa, cambiando la direccion en "serve "C:\users\usuario\documents\gestorled\build"" segun donde guardes el build
+3. conecta tu pc al mismo internet que el microcontrolador
+4. usa npm start o npm run build para empaquetarlo
+5. opcional en caso de usar el npm run build: usa el inicio.bat como acceso directo para ejecutar el programa, cambiando la direccion en "serve "C:\users\usuario\documents\gestorled\build"" segun donde guardes el build
 
-### 🚩 Cosas tener en cuenta
+## 🚩 Cosas tener en cuenta
 En base a mi experiencia programandolo es importante tener en cuenta los siguientes puntos:
   
   - Usar routers de 2.4Ghz de frecuencia, no funciona con aquellos de 5Ghz
