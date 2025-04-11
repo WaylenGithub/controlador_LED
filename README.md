@@ -62,11 +62,11 @@ Un sistema de control remoto para tiras de LEDs NeoPixel (WS2812B) mediante una 
 ### 🚩 Cosas tener en cuenta
 En base a mi experiencia programandolo es importante tener en cuenta los siguientes puntos:
   
-  -Usar routers de 2.4Ghz de frecuencia, no funciona con aquellos de 5Ghz
+  - Usar routers de 2.4Ghz de frecuencia, no funciona con aquellos de 5Ghz
   
-  -Por alguna razón con algunas tiras de LED la señal de luz verde era luz roja y viceversa, actualmente no sé por qué ocurría pero si te sucede lo mismo puedes modificar la parte grafica de los botones para no tener que modificar el codigo del microcontrolador y subirlo devuelta en él
+  - Por alguna razón con algunas tiras de LED la señal de luz verde era luz roja y viceversa, actualmente no sé por qué ocurría pero si te sucede lo mismo puedes modificar la parte grafica de los botones para no tener que modificar el codigo del microcontrolador y subirlo devuelta en él
   
-  -Originalmente este codigo estaba pensado para ESP32, y si cambian las dependencias a las necesarias para esta, en teoria deberia funcionar, sin embargo en la práctica nunca me funcionó, tal vez a ustedes si prueban les salga
+  - Originalmente este codigo estaba pensado para ESP32, y si cambian las dependencias a las necesarias para esta, en teoria deberia funcionar, sin embargo en la práctica nunca me funcionó, tal vez a ustedes si prueban les salga
 
 ## 🤝 Contribuciones
 
