@@ -52,9 +52,15 @@ Un sistema de control remoto para tiras de LEDs NeoPixel (WS2812B) mediante una 
     ]
 
 ## 🛠️ Configuración del archivo del FrontEnd
+
+### 📋 Requisitos
+- Editor de Código de preferencia
+- Node.js
+- Un padre nuestro (opcional)
+
+### ⚙️ Pasos de instalación
 1. Descarga Node.js si no lo tenés
 2. Descargar todas las dependencias necesarias:
-   Desde FrontEnd
    - react-scripts
    - react-dom
    - express
