@@ -69,7 +69,7 @@ Un sistema de control remoto para tiras de LEDs NeoPixel (WS2812B) mediante una 
 4. usa npm start o npm run build para empaquetarlo
 5. opcional en caso de usar el npm run build: usa el inicio.bat como acceso directo para ejecutar el programa, cambiando la direccion en "serve "C:\users\usuario\documents\gestorled\build"" segun donde guardes el build
 
-## 🚩 Cosas tener en cuenta
+## 🚩 Cosas a tener en cuenta
 En base a mi experiencia programandolo es importante tener en cuenta los siguientes puntos:
   
   - Usar routers de 2.4Ghz de frecuencia, no funciona con aquellos de 5Ghz
